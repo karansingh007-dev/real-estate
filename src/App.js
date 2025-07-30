@@ -32,7 +32,7 @@ function App() {
         <Route
           path="/"
           element={
-            <div>
+            <div className="overflow-x-hidden">
               <Carousel />
               <Features />
               <Sales />
