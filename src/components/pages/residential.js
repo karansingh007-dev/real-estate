@@ -2,7 +2,7 @@ import React from "react";
 import Imagee from "../../assets/1.png";
 const residential = () => {
   return (
-    <div className="m-40 ">
+    <div className="md:m-40 mt-40 ">
       <div className="flex leading-relaxed gap-5 flex-col items-center justify-center">
         <h1 className="text-4xl ">RESIDENTIAL BUILDINGS</h1>
         <p>
