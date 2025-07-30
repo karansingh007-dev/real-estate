@@ -43,7 +43,7 @@ const OurServices = () => {
               </div>
             </div>
 
-            <div className="w-full md:w-1/3 px-4 mb-8">
+            <div className="w-full md:w-1/3 md:px-4 mb-8">
               <div className="bg-white rounded-lg shadow-lg overflow-hidden">
                 <img
                   className="w-full h-48 object-cover object-center"
@@ -67,7 +67,7 @@ const OurServices = () => {
               </div>
             </div>
 
-            <div className="w-full md:w-1/3 px-4 mb-8">
+            <div className="w-full md:w-1/3 md:px-4 mb-8">
               <div className="bg-white rounded-lg shadow-lg overflow-hidden">
                 <img
                   className="w-full h-48 object-cover object-center"
