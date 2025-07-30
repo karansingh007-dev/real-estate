@@ -5,17 +5,17 @@ const AboutUs = () => {
   return (
     <div
       id="about"
-      className="flex flex-col md:flex-row w-full h-screen bg-gray-200"
+      className="flex flex-col pt-12 md:flex-row  md:mb-0 w-full h-auto bg-gray-200"
     >
-      <div className="w-full md:w-1/2 p-0 md:p-8 flex  items-center justify-center ">
+      <div className=" md:w-full md:w-1/2 p-0 md:p-8 flex  items-center justify-center ">
         <img
           src={Image}
           alt="About Us"
-          className="w-full h-auto  object-cover rounded-md md:rounded-lg shadow-lg"
+          className="w-[60%] md:w-full h-auto  object-cover rounded-md md:rounded-lg shadow-lg"
         />
       </div>
 
-      <div className="w-full  p-4 md:p-8 bg-gray-100 flex items-center justify-center">
+      <div className="w-full  p-4 md:p-8 bg-gray-200 flex items-center justify-center">
         <div className="text-center md:text-left">
           <h2 className="text-3xl  text-center justify-center md:text-6xl  text-black-800 mb-4">
             About Us
