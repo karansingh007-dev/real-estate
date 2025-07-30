@@ -98,25 +98,25 @@ import PropertyImage3 from "../../assets/8.png";
 
 const onsale = () => {
   return (
-    <div className="w-full min-h-80 p-2 flex justify-between  ">
-      <div className="w-[50%] mx-16 py-12 px-6 sm:px-6 lg:py-16 lg:px-8">
+    <div className="w-full flex flex-col md:flex-row min-h-80 p-2 flex justify-between  ">
+      <div className="w-screen md:w-[50%]  mx-8 md:mx-16 py-12 px-auto sm:px-6 lg:py-16 lg:px-8">
         <h2 className="text-6xl  text-gray-800 mb-6">
           Premium Properties with Best Locations
         </h2>
-        <p className="text-lg text-gray-700 mb-8">
+        <p className="text-lg w-full text-gray-700 mb-8">
           We have the best properties in the best locations. Our properties are
           designed to provide you with the best living experience. Whether you
           are looking for a residential property or a commercial property, we
           have the best options for you.
         </p>
       </div>
-      <div className="w-full md:w-[50%] grid grid-cols-1 md:grid-cols-2 gap-2 ">
-        <div className="row-span-2">
+      <div className="w-100% md:w-[50%] grid grid:cols-1 md:grid-cols-2 gap-4 md:gap-2 ">
+        <div className="md:row-span-2">
           <img
             src={PropertyImage1}
             data-aos="fade-right"
             alt="Property"
-            className="w-full h-full object-cover  transition-transform hover:scale-105 duration-500 ease-in-out  rounded-lg mb-4"
+            className="w-full h-full object-cover  transition transform hover:scale-105 duration-500 ease-in-out  rounded-lg mb-4"
           />
         </div>
         <div>
