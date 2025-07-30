@@ -5,9 +5,9 @@ import Imagee3 from "../../assets/3.png";
 import Imagee4 from "../../assets/4.png";
 const commercial = () => {
   return (
-    <div className="m-40 ">
+    <div className=" md:m-40 mt-40 ">
       <div className="flex leading-relaxed gap-5 flex-col items-center justify-center">
-        <h1 className="text-4xl ">RESIDENTIAL BUILDINGS</h1>
+        <h1 className="text-4xl ">COMMERCIAL BUILDINGS</h1>
         <p>
           Step into a world where comfort meets innovation. Our residential
           buildings are designed to redefine the way you live — blending
