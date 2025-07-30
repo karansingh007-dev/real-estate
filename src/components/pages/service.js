@@ -9,7 +9,7 @@ const OurServices = () => {
       id="service"
       className="w-full min-h-screen p-2 flex items-center bg-gradient-to-b from-white to-gray-200"
     >
-      <div className="max-w-7xl mx-16 py-12 px-4 sm:px-6 lg:py-16 lg:px-6">
+      <div className="max-w-7xl mx-16 py-12  sm:px-2 lg:py-16 lg:px-6">
         <h2 className="text-6xl  text-gray-800 mb-6">
           Our <span className="text-gray-800">Services</span>
         </h2>
@@ -17,9 +17,9 @@ const OurServices = () => {
           We offer many services for our clients, Here are some of our services:
         </p>
 
-        <div className="container mx-auto px-4">
-          <div className="flex flex-wrap mx-4">
-            <div className="w-full md:w-1/3 px-4 mb-8">
+        <div className="container mx-auto md:px-4">
+          <div className="flex flex-wrap  md:mx-4">
+            <div className="w-full md:w-1/3 md:px-4 mb-8">
               <div className="bg-white rounded-lg shadow-lg overflow-hidden">
                 <img
                   className="w-full h-48 object-cover object-center"
