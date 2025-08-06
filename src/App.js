@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar";
-import Footer from "./components/footer";
-import Home from "./components/pages/home";
+// import Footer from "./components/footer";
+// import Home from "./components/pages/home";
 import Features from "./components/pages/features";
 import Sales from "./components/pages/onsale";
 import About from "./components/pages/about";
-import Client from "./components/pages/clients";
+// import Client from "./components/pages/clients";
 import Service from "./components/pages/service";
 import Contact from "./components/pages/contact";
 import Demo from "./components/pages/demo";
@@ -16,6 +16,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import ScrollToTop from "./components/ScrollToTop"; // Add this import
 import Carousel from "./components/Carousel";
+import CommunitiesPage from "./components/pages/CommunitiesPage";
+import LatestProjects from "./components/LatestProjects";
+import Footer from "./components/Footer.jsx";
 function App() {
   useEffect(() => {
     AOS.init({
@@ -39,16 +42,22 @@ function App() {
               <Service />
               <Demo />
               {/* <Client /> */}
-              <About />
+
               <Contact />
             </div>
           }
         />
 
         {/* Residential Page Route */}
+        <Route path="/communities" element={<CommunitiesPage />} />
+        <Route path="/projects" element={<LatestProjects />} />
+
+        <Route path="/about" element={<About />} />
         <Route path="/residential" element={<Residential />} />
         <Route path="/commercial" element={<Commercial />} />
       </Routes>
+     
+<Footer/>
     </Router>
   );
 }

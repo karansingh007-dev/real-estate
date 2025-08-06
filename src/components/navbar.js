@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 
 import "../index.css";
 import { useLocation } from "react-router-dom";
@@ -35,9 +35,9 @@ const Navbar = () => {
         isHomePage ? "text-white" : "bg-black text-black shadow-md"
       }`}
     >
-      <div className="text-4xl cursor-pointer inline-flex items-center text-white-800">
+      <div className="text-2xl cursor-pointer inline-flex items-center text-white-800">
         <Link to="home" smooth={true} duration={500}>
-          Real Estate
+          Estate
         </Link>
       </div>
       <div className="md:hidden" onClick={handleMenuClick}>
@@ -71,40 +71,40 @@ const Navbar = () => {
       </div>
       <ul className="hidden md:flex">
         <li>
-          <Link to="home" smooth={true} duration={500}>
+          <Link to="/" smooth={true} duration={500}>
             Home
           </Link>
         </li>
         <li>
-          <Link to="about" smooth={true} duration={500}>
+          <Link to="/about" smooth={true} duration={500}>
             About Us
           </Link>
         </li>
         <li>
-          <Link to="feature" smooth={true} duration={500}>
-            Our Features
+          <Link to="/communities" smooth={true} duration={500}>
+            Communities
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="sale" smooth={true} duration={500}>
             On Sale
           </Link>
-        </li>
+        </li> */}
         <li>
-          <Link to="service" smooth={true} duration={500}>
-            Our Services
+          <Link to="/projects" smooth={true} duration={500}>
+           Latest Projects
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="demo" smooth={true} duration={500}>
             Demo
           </Link>
-        </li>
-        <li>
+        </li> */}
+        {/* <li>
           <Link to="client" smooth={true} duration={500}>
             Our Clients
           </Link>
-        </li>
+        </li> */}
       </ul>
       <div className="hidden md:flex">
         <button className="px-4 py-2 bg-blue-800 text-white rounded-md hover:bg-blue-900 hover:text-white mx-2">
@@ -119,7 +119,7 @@ const Navbar = () => {
         } md:hidden flex flex-col bg-blue-800 text-white w-full absolute top-16 left-0 z-10`}
       >
         <Link
-          to="home"
+          to="/"
           smooth={true}
           duration={500}
           className="p-4 hover:bg-gray-700 cursor-pointer"
@@ -128,7 +128,7 @@ const Navbar = () => {
           Home
         </Link>
         <Link
-          to="about"
+          to="/about"
           smooth={true}
           duration={500}
           className="p-4 hover:bg-gray-700 cursor-pointer"
@@ -137,33 +137,33 @@ const Navbar = () => {
           About Us
         </Link>
         <Link
-          to="feature"
+          to="/communities"
           smooth={true}
           duration={500}
           className="p-4 hover:bg-gray-700 cursor-pointer"
           onClick={handleMenuClick}
         >
-          Our Features
+          Communities
         </Link>
-        <Link
-          to="sale"
+        {/* <Link
+          to="/projects"
           smooth={true}
           duration={500}
           className="p-4 hover:bg-gray-700 cursor-pointer"
           onClick={handleMenuClick}
         >
           On Sale
-        </Link>
+        </Link> */}
         <Link
-          to="service"
+          to="/projects"
           smooth={true}
           duration={500}
           className="p-4 hover:bg-gray-700 cursor-pointer"
           onClick={handleMenuClick}
         >
-          Our Services
+          Latest Projects
         </Link>
-        <Link
+        {/* <Link
           to="demo"
           smooth={true}
           duration={500}
@@ -171,8 +171,8 @@ const Navbar = () => {
           onClick={handleMenuClick}
         >
           Demo
-        </Link>
-        <Link
+        </Link> */}
+        {/* <Link
           to="client"
           smooth={true}
           duration={500}
@@ -180,7 +180,7 @@ const Navbar = () => {
           onClick={handleMenuClick}
         >
           Our Clients
-        </Link>
+        </Link> */}
         <Link
           to="contact"
           smooth={true}
