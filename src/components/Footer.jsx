@@ -1,13 +1,13 @@
 // components/Footer.jsx
 
 import React from "react";
-import {
-  FaFacebookF,
-  FaXTwitter,
-  FaYoutube,
-  FaInstagram,
-  FaLinkedinIn,
-} from "react-icons/fa";
+// import {
+//   FaFacebookF,
+//   FaXTwitter,
+//   FaYoutube,
+//   FaInstagram,
+//   FaLinkedinIn,
+// } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -19,11 +19,11 @@ const Footer = () => {
           <div className="flex items-center gap-6">
             <h2 className="text-2xl font-bold">GURGAON HOMES</h2>
             <div className="flex gap-4 text-xl text-gray-600">
-              <FaFacebookF />
+{/*               <FaFacebookF />
               <FaXTwitter />
               <FaYoutube />
               <FaInstagram />
-              <FaLinkedinIn />
+              <FaLinkedinIn /> */}
             </div>
           </div>
 
