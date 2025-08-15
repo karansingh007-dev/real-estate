@@ -226,7 +226,7 @@ const onsale = () => {
                 src={property.image}
                 alt={property.title}
                 data-aos={index % 2 === 0 ? 'fade-right' : 'fade-left'} // 👈 Animate based on index
-                className="p-2 w-full h-full object-cover rounded-xl shadow-sm"
+                className="p-2 w-[80%] md:w-full h-full object-cover rounded-xl shadow-sm"
               />
               <p className="m-auto text-sm text-gray-600 font-medium">
                 {property.title}
