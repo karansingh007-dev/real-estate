@@ -1,17 +1,17 @@
 // components/Footer.jsx
 
 import React from "react";
-import {
-  FaFacebookF,
-  FaXTwitter,
-  FaYoutube,
-  FaInstagram,
-  FaLinkedinIn,
-} from "react-icons/fa6";
+// import {
+//   FaFacebookF,
+//   FaXTwitter,
+//   FaYoutube,
+//   FaInstagram,
+//   FaLinkedinIn,
+// } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-100 text-gray-700 mt-12">
+    <footer className="bg-gray-100 text-gray-700 ">
       <div className="max-w-7xl mx-auto px-4 py-12">
         {/* Top section */}
         <div className="flex flex-col md:flex-row md:justify-between items-center mb-8 border-b pb-8">
@@ -19,11 +19,11 @@ const Footer = () => {
           <div className="flex items-center gap-6">
             <h2 className="text-2xl font-bold">GURGAON HOMES</h2>
             <div className="flex gap-4 text-xl text-gray-600">
-              <FaFacebookF />
+              {/* <FaFacebookF />
               <FaXTwitter />
               <FaYoutube />
               <FaInstagram />
-              <FaLinkedinIn />
+              <FaLinkedinIn /> */}
             </div>
           </div>
 
@@ -61,7 +61,7 @@ const Footer = () => {
           </div>
 
           {/* Communities */}
-          <div>
+          {/* <div>
             <h4 className="font-semibold mb-3">Communities</h4>
             <ul className="space-y-2">
               <li>DLF Phase 1–5</li>
@@ -72,10 +72,10 @@ const Footer = () => {
               <li>South City 1 & 2</li>
               <li>Sector 49, 51, 56</li>
             </ul>
-          </div>
+          </div> */}
 
           {/* Latest Launches */}
-          <div>
+          {/* <div>
             <h4 className="font-semibold mb-3">Latest Launches</h4>
             <ul className="space-y-2">
               <li>DLF Privana West</li>
@@ -86,7 +86,7 @@ const Footer = () => {
               <li>Elan Presidential</li>
               <li>Whiteland Urban Resort</li>
             </ul>
-          </div>
+          </div> */}
 
           {/* Other / International / Placeholder */}
           <div>

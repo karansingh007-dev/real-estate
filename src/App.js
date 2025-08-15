@@ -5,6 +5,7 @@ import Navbar from "./components/navbar";
 import Features from "./components/pages/features";
 import Sales from "./components/pages/onsale";
 import About from "./components/pages/about";
+import HeroSection from "./components/HeroSection.jsx"
 // import Client from "./components/pages/clients";
 import Service from "./components/pages/service";
 import Contact from "./components/pages/contact";
@@ -36,6 +37,7 @@ function App() {
           path="/"
           element={
             <div className="overflow-x-hidden">
+              <HeroSection/>
               <Carousel />
               <Features />
               <Sales />

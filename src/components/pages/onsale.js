@@ -183,15 +183,15 @@ const onsale = () => {
   ];
 
   return (
-    <section className="w-full px-6 lg:px-16 py-16 bg-white">
+    <section className="w-full font-cinzel px-6 lg:px-16 py-16 bg-white">
       {/* === DESKTOP VIEW === */}
       <div className="hidden lg:grid max-w-7xl mx-auto grid-cols-2 gap-10 items-start">
         {/* Left Text */}
-        <div>
+        <div >
           <span className="uppercase tracking-widest text-sm text-gray-500">
             Gurgaon Realty
           </span>
-          <h2 className="text-4xl font-semibold mt-2 text-gray-900 leading-snug">
+          <h2 className="text-4xl font-cinzel mt-2 text-gray-900 ">
             Premium Properties in Delhi NCR’s Most Sought-After Locations
           </h2>
           <p className="text-gray-700 mt-6 text-lg leading-relaxed">
