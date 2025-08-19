@@ -133,12 +133,12 @@ const OurServices = () => {
     <div id="service" className="w-full bg-gray-50 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
-        <h2 className="text-4xl font-cinzel text-gray-800 mb-6">
+        <h2 className="text-4xl ml-24 md:m-auto font-cinzel font-semibold  text-gray-800 mb-6">
           Our <span className="text-[#0a1732]">Services</span>
         </h2>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 h-[30%] w-[70%] m-auto md:w-full sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1  md:h-[30%] w-[70%] m-auto md:w-full sm:grid-cols-2 md:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div
               key={index}
@@ -169,7 +169,7 @@ const OurServices = () => {
                   <h3 className="text-2xl font-bold text-white">
                     {service.title}
                   </h3>
-                  <p className="text-sm text-gray-200 mt-2">
+                  <p className="hidden md:block text-sm text-gray-200 mt-2">
                     {service.description}
                   </p>
                 </div>

@@ -10,7 +10,7 @@ import HeroSection from "./components/HeroSection.jsx"
 import Service from "./components/pages/service";
 import Contact from "./components/pages/contact";
 import Demo from "./components/pages/demo";
-import Residential from "./components/pages/residential"; // Add this import
+import Residential from "./components/pages/residential.js"; // Add this import
 import Commercial from "./components/pages/commercial";
 import { useEffect } from "react";
 import AOS from "aos";
@@ -55,7 +55,7 @@ function App() {
         <Route path="/projects" element={<LatestProjects />} />
 
         <Route path="/about" element={<About />} />
-        <Route path="/residential" element={<Residential />} />
+        <Route path="/residentials" element={<Residential />} />
         <Route path="/commercial" element={<Commercial />} />
       </Routes>
      

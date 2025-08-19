@@ -187,7 +187,7 @@ const onsale = () => {
       {/* === DESKTOP VIEW === */}
       <div className="hidden lg:grid max-w-7xl mx-auto grid-cols-2 gap-10 items-start">
         {/* Left Text */}
-        <div >
+        <div>
           <span className="uppercase tracking-widest text-sm text-gray-500">
             Gurgaon Realty
           </span>
@@ -220,12 +220,12 @@ const onsale = () => {
           {properties.map((property, index) => (
             <div
               key={property.id}
-              className={property.id === 1 ? 'row-span-2' : ''}
+              className={property.id === 1 ? "row-span-2" : ""}
             >
               <img
                 src={property.image}
                 alt={property.title}
-                data-aos={index % 2 === 0 ? 'fade-right' : 'fade-left'} // 👈 Animate based on index
+                data-aos={index % 2 === 0 ? "fade-right" : "fade-left"} // 👈 Animate based on index
                 className="p-2 w-[80%] md:w-full h-full object-cover rounded-xl shadow-sm"
               />
               <p className="m-auto text-sm text-gray-600 font-medium">
@@ -252,23 +252,29 @@ const onsale = () => {
           connectivity.
         </p>
 
-        {/* Mobile property images - stacked */}
+       
         <div className="mt-10 space-y-8">
-          {properties.map((property) => (
-            <div key={property.id}>
-              <img
-                data-aos="fade-up" // 👈 simple upward animation for mobile
-                src={property.image}
-                alt={property.title}
-                className="w-full h-auto object-cover rounded-xl"
-              />
-              <div className="mt-2 text-sm text-gray-600 font-medium">
-                {property.title}
-              </div>
-              <div className="text-xs text-gray-500">{property.category}</div>
-            </div>
-          ))}
-        </div>
+  {properties.map((property) => (
+    <div
+      key={property.id}
+      className="flex flex-col items-center text-center"
+    >
+      <div className="flex justify-center w-full">
+        <img
+          data-aos="fade-up"
+          src={property.image}
+          alt={property.title}
+          className="w-[80%] h-auto object-cover rounded-xl transform transition duration-500 ease-in-out hover:scale-105"
+        />
+      </div>
+      <div className="mt-2 text-sm text-gray-600 font-medium">
+        {property.title}
+      </div>
+      <div className="text-xs text-gray-500">{property.category}</div>
+    </div>
+  ))}
+</div>
+
       </div>
     </section>
   );

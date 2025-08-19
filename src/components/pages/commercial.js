@@ -5,18 +5,14 @@ import Imagee3 from "../../assets/3.png";
 import Imagee4 from "../../assets/4.png";
 const commercial = () => {
   return (
-    <div className=" md:m-40 mt-40 ">
+    <div className=" md:m-40 mt-20 ">
       <div className="flex leading-relaxed gap-5 flex-col items-center justify-center">
-        <h1 className="text-4xl ">COMMERCIAL BUILDINGS</h1>
-        <p>
+        <h1 className="text-4xl px-3">COMMERCIAL BUILDINGS</h1>
+        <p className="px-3">
           Step into a world where comfort meets innovation. Our residential
           buildings are designed to redefine the way you live — blending
           contemporary architecture, smart layouts, and elegant finishes to
-          create the perfect living environment. Enjoy spacious interiors,
-          natural lighting, and thoughtfully planned amenities that cater to
-          every lifestyle. Whether you're a young professional, a growing
-          family, or someone seeking peace and privacy, our residences offer the
-          ideal space to call home.
+          create the perfect living environment.
         </p>
       </div>
       <div className="max-w-7xl mx-auto px-4 py-12 space-y-24">
@@ -26,7 +22,7 @@ const commercial = () => {
             src={Imagee2}
             alt="Greenwood Estate"
             data-aos="fade-right"
-            className="w-full md:w-1/2 rounded-lg object-cover"
+            className="w-[80%] md:w-1/2 rounded-lg object-cover"
           />
           <div className="w-full md:w-1/2">
             <h2 className="text-2xl font-bold text-gray-800 mb-2">
@@ -50,7 +46,7 @@ const commercial = () => {
             src={Imagee2}
             alt="Lakeview Manor"
             data-aos="fade-left"
-            className="w-full md:w-1/2 rounded-lg object-cover"
+            className="w-[80%] md:w-1/2 rounded-lg object-cover"
           />
           <div className="w-full md:w-1/2">
             <h2 className="text-2xl font-bold text-gray-800 mb-2">
@@ -62,7 +58,7 @@ const commercial = () => {
             <p className="text-lg font-semibold text-blue-700 mb-4">
               $1,250,000
             </p>
-            <p className="text-gray-600 text-lg mb-4">
+            <p className="text-gray-600 text-lg mb-2">
               A stunning 4-bedroom waterfront property with panoramic views of
               Lake Michigan...
             </p>
@@ -75,7 +71,7 @@ const commercial = () => {
             src={Imagee2}
             alt="Willow Creek Residence"
             data-aos="fade-right"
-            className="w-full md:w-1/2 rounded-lg object-cover"
+            className="w-[80%] md:w-1/2 rounded-lg object-cover"
           />
           <div className="w-full md:w-1/2">
             <h2 className="text-2xl font-bold text-gray-800 mb-2">
@@ -85,7 +81,7 @@ const commercial = () => {
               890 Forest Ridge Rd, Asheville, NC
             </p>
             <p className="text-lg font-semibold text-blue-700 mb-4">$849,500</p>
-            <p className="text-gray-600 text-lg mb-4">
+            <p className="text-gray-600 text-lg mb-2">
               Set on a wooded hillside, this craftsman-style home combines
               rustic charm with upscale finishes...
             </p>

@@ -42,11 +42,11 @@ const residentialData = [
 
 const Residential = () => {
   return (
-    <div className="md:m-40 mt-40">
+    <div className="md:m-40 mt-20">
       {/* Header */}
       <div className="flex leading-relaxed gap-5 flex-col items-center justify-center text-center">
         <h1 className="text-5xl ">RESIDENTIAL BUILDINGS</h1>
-        <p className="max-w-3xl text-gray-600">
+        <p className=" w-[80%] md:max-w-3xl text-gray-600">
           Step into a world where comfort meets innovation. Our residential
           buildings are designed to redefine the way you live — blending
           contemporary architecture, smart layouts, and elegant finishes to
@@ -55,7 +55,7 @@ const Residential = () => {
       </div>
 
       {/* Grid of Properties */}
-      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+      <div className=" w-[80%] md:max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8">
           {residentialData.map((item, index) => (
             <div
